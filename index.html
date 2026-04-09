@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,6 +13,94 @@
         <span class="navbar-brand">EmilyBurger</span>
         <span class="badge bg-warning text-dark" id="badge">0</span>
     </nav>
-    
+
+    <!-- PRODUCTOS -->
+    <div class="container mt-4">
+        <div class="row">
+
+            <!-- IZQUIERDA: PRODUCTOS -->
+            <div class="col-md-8">
+                <div class="row">
+
+                    <!-- PRODUCTO 1 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card p-3">
+                            <h5>La Emily</h5>
+                            <p>$60.900</p>
+                            <button class="btn btn-primary btn-agregar"
+                                    data-nombre="La emily"
+                                    data-precio="60900">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 2 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card p-3">
+                            <h5>La Ratona</h5>
+                            <p>$30.000</p>
+                            <button class="btn btn-primary btn-agregar"
+                                    data-nombre="La ratona"
+                                    data-precio="30000">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 3 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card p-3">
+                            <h5>La MotoSierra</h5>
+                            <p>$55.900</p>
+                            <button class="btn btn-primary btn-agregar"
+                                    data-nombre="La motoSierra"
+                                    data-precio="55900">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 4 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card p-3">
+                            <h5>La Gomela</h5>
+                            <p>$48.900</p>
+                            <button class="btn btn-primary btn-agregar"
+                                    data-nombre="La gomela"
+                                    data-precio="48900">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DERECHA: CARRITO -->
+            <div class="col-md-4">
+                <div class="card p-3 shadow">
+
+                    <h4>Carrito</h4>
+
+                    <ul id="lista-carrito" class="list-group mb-3">
+                        <li id="msg-vacio" class="list-group-item text-center">
+                            Tu carrito está vacío
+                        </li>
+                    </ul>
+
+                    <p>Total: <strong>$<span id="total">0</span></strong></p>
+
+                    <!-- BOTÓN ABAJO -->
+                    <button id="btn-vaciar" class="btn btn-danger w-100 mt-2">
+                        Vaciar carrito
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
 </html>

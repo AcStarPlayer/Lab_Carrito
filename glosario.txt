@@ -1,0 +1,25 @@
+querySelectorAll
+
+Selecciona TODOS los botones:
+document.querySelectorAll(".btn-agregar")
+
+dataset
+Lee datos del HTML:
+
+data-nombre="Mouse"
+boton.dataset.nombre
+
+createElement
+
+Crea elementos dinámicos:
+const li = document.createElement("li");
+
+appendChild
+
+Agrega al DOM:
+lista.appendChild(li);
+
+remove()
+
+Elimina elementos:
+li.remove();
