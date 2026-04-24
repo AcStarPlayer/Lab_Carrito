@@ -6,6 +6,7 @@ const badge = document.querySelector("#badge");
 const btnVaciar = document.querySelector("#btn-vaciar");
 const msgVacio = document.querySelector("#msg-vacio");
 
+//
 let totalAcumulado = 0;
 let cantidadItems = 0;
 
